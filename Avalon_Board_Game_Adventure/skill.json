@@ -1,0 +1,25 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "avalonAlexaSkill",
+          "sourceDir": "lambda/us-east-1_avalonAlexaSkill"
+        },
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Avalon Board Game Adventure"
+        }
+      }
+    }
+  }
+}

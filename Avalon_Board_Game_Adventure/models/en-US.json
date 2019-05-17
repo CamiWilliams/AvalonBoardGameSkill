@@ -1,0 +1,218 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "avalon adventure",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HowManyPlayersIntent",
+                    "slots": [
+                        {
+                            "name": "numPlayer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "there are {numPlayer} players",
+                        "{numPlayer} people are playing",
+                        "i am playing with {numPlayer} people",
+                        "{numPlayer} players",
+                        "{numPlayer}"
+                    ]
+                },
+                {
+                    "name": "SpecialBadCharacterIntent",
+                    "slots": [
+                        {
+                            "name": "badCharacterOne",
+                            "type": "badCharacterType"
+                        },
+                        {
+                            "name": "badCharacterTwo",
+                            "type": "badCharacterType"
+                        },
+                        {
+                            "name": "badCharacterThree",
+                            "type": "badCharacterType"
+                        },
+                        {
+                            "name": "badCharacterFour",
+                            "type": "badCharacterType"
+                        }
+                    ],
+                    "samples": [
+                        "nothing",
+                        "none",
+                        "there will be no special minions of mordred",
+                        "no special minions of mordred",
+                        "i will not use any special bad characters",
+                        "i am not playing with any bad characters",
+                        "lets use {badCharacterOne} {badCharacterTwo} {badCharacterThree} and {badCharacterFour}",
+                        "lets use {badCharacterOne} {badCharacterTwo} and {badCharacterThree}",
+                        "lets use {badCharacterOne} and {badCharacterTwo}",
+                        "just {badCharacterOne}",
+                        "lets use {badCharacterOne}",
+                        "{badCharacterOne}",
+                        "{badCharacterOne} and {badCharacterTwo}",
+                        "{badCharacterOne} {badCharacterTwo} and {badCharacterThree}",
+                        "{badCharacterOne} {badCharacterTwo} {badCharacterThree} and {badCharacterFour}",
+                        "i am playing with {badCharacterOne} {badCharacterTwo} {badCharacterThree} and {badCharacterFour}",
+                        "i am playing with {badCharacterOne} {badCharacterTwo} and {badCharacterThree}",
+                        "i am playing with {badCharacterOne} and {badCharacterTwo}",
+                        "i am playing with {badCharacterOne}"
+                    ]
+                },
+                {
+                    "name": "SpecialGoodCharacterIntent",
+                    "slots": [
+                        {
+                            "name": "goodCharacterOne",
+                            "type": "goodCharacterType"
+                        },
+                        {
+                            "name": "goodCharacterTwo",
+                            "type": "goodCharacterType"
+                        },
+                        {
+                            "name": "goodCharacterThree",
+                            "type": "goodCharacterType"
+                        }
+                    ],
+                    "samples": [
+                        "nothing",
+                        "none",
+                        "there will be no special servants of arthur",
+                        "no special servants of arthur",
+                        "i will not use any special good characters",
+                        "i am not playing with any good characters",
+                        "lets use {goodCharacterOne} and {goodCharacterTwo}",
+                        "lets use {goodCharacterOne} {goodCharacterTwo} and {goodCharacterThree}",
+                        "just {goodCharacterOne}",
+                        "lets use {goodCharacterOne}",
+                        "{goodCharacterOne}",
+                        "{goodCharacterOne} {goodCharacterTwo} and {goodCharacterThree}",
+                        "{goodCharacterOne} and {goodCharacterTwo}",
+                        "i am playing with {goodCharacterOne} and {goodCharacterTwo}",
+                        "i am playing with {goodCharacterOne} {goodCharacterTwo} and {goodCharacterThree}",
+                        "i am playing with {goodCharacterOne}"
+                    ]
+                },
+                {
+                    "name": "BuyIntent",
+                    "slots": [],
+                    "samples": [
+                        "buy the lancelot character pack",
+                        "purchase lancelot",
+                        "purchase the lancelot character pack",
+                        "lancelot pack",
+                        "i want to buy the lancelot pack",
+                        "give me the lancelot pack",
+                        "i want to buy a lancelot"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "badCharacterType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lancelot",
+                                "synonyms": [
+                                    "bad lancelot"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "assassin",
+                                "synonyms": [
+                                    "the one that identifies merlin"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "oberon",
+                                "synonyms": [
+                                    "the bad guy that knows nothing"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "morgana",
+                                "synonyms": [
+                                    "bad merlin"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "0",
+                            "name": {
+                                "value": "mordred",
+                                "synonyms": [
+                                    "the guy that is hidden from merlin"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "goodCharacterType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lancelot",
+                                "synonyms": [
+                                    "good lancelot"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "percival",
+                                "synonyms": [
+                                    "the guy that knows merlin"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "0",
+                            "name": {
+                                "value": "merlin",
+                                "synonyms": [
+                                    "the good guy that sees everything",
+                                    "the good guy that sees all the bad guys"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

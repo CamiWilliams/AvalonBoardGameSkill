@@ -1,0 +1,33 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.68cc19ae-3ac6-4232-af8c-37d3fc6757b0",
+      "was_cloned": false,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "02563a88bc899f684c55905e382bc97d"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "0f9cb8dbd34cd6d9efce8788eabb56a9"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:030560555596:function:avalonAlexaSkill",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/us-east-1_avalonAlexaSkill",
+            "functionName": "avalonAlexaSkill",
+            "handler": "index.handler",
+            "revisionId": "a96ecf41-7141-4cd2-8174-1038e7eb819e",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
+    }
+  }
+}
